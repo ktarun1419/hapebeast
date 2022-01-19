@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div class="page">
-      <img src="./back.png" alt=""  class="img" width="101%" height="101%" v-if="this.x>='483'">
-      <img src="./back copy.png" alt=""  class="img" width="105%" height="102%" v-if="this.x<='482'" style="margin-left:-8px">
+      <img src="./back.png" alt=""  class="img" width="101%" height="101%" v-if="this.x>='483'" style="margin-left:-8px; margin-top:-5px">
+      <img src="./back copy.png" alt=""  class="img" width="105%" height="102%" v-if="this.x<='482'" style="margin-left:-8px;margin-top:-5px" >
       <div class="modal1">
         <div class="modal-content1">
           <img src="./hype2.png" alt="" class="img1" >
