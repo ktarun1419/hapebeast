@@ -198,7 +198,7 @@ margin-top: -50px;
 }
 @media screen and (max-width: 482px){
   .btn{
-    width: 70%;
+    width: 60%;
   }.font{
     font-size: 40px;
     font-weight: 600;
