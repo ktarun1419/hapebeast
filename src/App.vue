@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <div class="page">
-      <img src="./back.png" alt=""  class="img" width="102%" height="109%">
+      <img src="./back.png" alt=""  class="img" width="101%" height="101%" v-if="this.x>='483'">
+      <img src="./back copy.png" alt=""  class="img" width="105%" height="102%" v-if="this.x<='482'" style="margin-left:-8px">
       <div class="modal1">
         <div class="modal-content1">
-          <img src="./hype2.png" alt="" class="img1">
+          <img src="./hype2.png" alt="" class="img1" >
           <h4 class="font1">
             This is the official HAPEBEAST mint site. Follow the instructions to mint your HAPE now. See you on the other side.
           </h4>
@@ -28,6 +29,11 @@
 
 
 export default {
+  data(){
+    return{
+      x: window.innerWidth,
+    }
+  },
 
   created(){
     if (typeof window.ethereum !== "undefined") {
@@ -120,7 +126,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000000;
+  background-color: black;
 }
 .page{
   
