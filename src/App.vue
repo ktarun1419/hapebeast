@@ -167,7 +167,7 @@ export default {
 
 .font1{
 color: white;
-font-size: 20px;
+font-size: 25px;
 font-family: Barlow;
 font-weight: 200;
 margin-top: -50px;
