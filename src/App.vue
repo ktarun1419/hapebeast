@@ -1,22 +1,19 @@
 <template>
   <div id="app">
     <div class="page">
-      <img src="./back.png" alt="" width="100%" height="110%">
+      <img src="./back.png" alt=""  class="img" width="102%" height="109%">
       <div class="modal1">
         <div class="modal-content1">
-          <h2 class="font">
-            HⱯPEBEAST
-          </h2>
+          <img src="./hype2.png" alt="" class="img1">
           <h4 class="font1">
             This is the official HAPEBEAST mint site. Follow the instructions to mint your HAPE now. See you on the other side.
           </h4>
-          <h4>Quantity (max 15): <input type="number" name="" id="number" max="15" min="0"> <button>MAX</button></h4>
+          <h4 style="font-family: Poppins, sans-serif;margin-top:60px">Quantity (max 15): <input type="number" name="" id="number" max="15" min="0"> <button style="background-color:white; padding:10px" v-on:click="max">MAX</button></h4>
         
-          <h4>Price per mint is 0.2 ETH</h4>
-          <h4 style="font-size: 20px;
-  margin-top: 60px;">1. Connect your wallet with MetaMask</h4>
-          <h4 style="font-size: 20px;
-  margin-top: -10px;">2. Click on the button to mint your Hapes</h4>
+          <h4 style="margin:50px">Price per mint is 0.2 ETH</h4>
+          <span class="font2"
+>1. Connect your wallet with MetaMask</span><br>
+          <span class="font2">2. Click on the button to mint your Hapes</span><br>
           <button class="btn" v-on:click="mint">MINT</button>
         </div>
 
@@ -66,6 +63,11 @@ export default {
     });
   },
   methods:{
+    max(){
+      const value=15
+      document.getElementById('number').value=value
+      
+    },
     mint(){
       const ethEnabled = async () => {
         if (window.ethereum) {
@@ -149,15 +151,19 @@ export default {
   padding: 20px;
   
   width: 60%; /* Could be more or less, depending on screen size */
+}.img1{
+  
+  width: 600px;
+  height: 200px;
+
 }
-.font{
-  color: white;
-  font-size: 80px;
-  font-weight: 700;
-}
+
 .font1{
 color: white;
 font-size: 20px;
+font-family: Barlow;
+font-weight: 200;
+margin-top: -50px;
 }
 .btn {
   -webkit-border-radius: 28;
@@ -171,6 +177,7 @@ font-size: 20px;
   text-decoration: none;
   width: 300px;
   cursor: pointer;
+  margin-top: 50px;
 }
 
 .btn:hover {
@@ -179,7 +186,27 @@ font-size: 20px;
 }
 .font2{
   font-size: 20px;
-  margin-top: 20px;
+  
+  font-family: Poppins, sans-serif;
+}
+@media screen and (max-width: 482px){
+  .btn{
+    width: 80%;
+  }.font{
+    font-size: 40px;
+    font-weight: 600;
+  }.font1{
+    font-size: 15px;
+    margin-top: -10px;
+  }.modal-content1{
+    width: 90%;
+  }.font2{
+    font-size: 15px;
+    margin-top: 10px;
+  }.img1{
+    width: 350px;
+    height:80px
+  }
 }
 
 </style>
