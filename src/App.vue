@@ -9,7 +9,7 @@
           <h4 class="font1">
             This is the official HAPEBEAST mint site. Follow the instructions to mint your HAPE now. See you on the other side.
           </h4>
-          <h4 style="font-family: Poppins, sans-serif;margin-top:60px">Quantity (max 15): <input type="number" name="" id="number" max="15" min="0"> <button style="background-color:white; padding:10px" v-on:click="max">MAX</button></h4>
+          <h4 style="font-family: Poppins, sans-serif;margin-top:60px">Quantity (max 5): <input type="number" name="" id="number" max="5" min="0"> <button style="background-color:white; padding:10px" v-on:click="max">MAX</button></h4>
         
           <h4 style="margin:50px">Price per mint is 0.2 ETH</h4>
           <span class="font2"
@@ -198,7 +198,7 @@ margin-top: -50px;
 }
 @media screen and (max-width: 482px){
   .btn{
-    width: 80%;
+    width: 70%;
   }.font{
     font-size: 40px;
     font-weight: 600;
