@@ -70,7 +70,7 @@ export default {
   },
   methods:{
     max(){
-      const value=15
+      const value=5
       document.getElementById('number').value=value
       
     },
